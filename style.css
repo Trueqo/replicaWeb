@@ -245,17 +245,38 @@ footer{
 
 .video2{
 
-    
+    position: absolute;
     height: 425px;
     align-items: center;
     justify-content: center;
+    z-index: 1;
 
 }
 
 .celu2{
     position: absolute;
     height:450px;
+    z-index: 2;
     
+}
+
+.circle2{
+    width: 250px;
+    height: 250px;
+    -webkit-border-radius: 125px;
+    -moz-border-radius: 125px;
+    border-radius: 125px;
+    position: absolute;
+    padding-top: 20px;
+    z-index: 0;
+    background: rgb(80, 44, 235);
+    background: -moz-linear-gradient(43deg, rgb(80, 44, 235) 20%, rgb(158, 31, 226) 60%);
+    background: -webkit-linear-gradient(43deg, rgb(80, 44, 235) 20%, rgb(158, 31, 226) 60%);
+    background: -o-linear-gradient(43deg, rgb(80, 44, 235) 20%, rgb(158, 31, 226) 60%);
+    background: -ms-linear-gradient(43deg, rgb(80, 44, 235) 20%, rgb(158, 31, 226) 60%);
+    background: linear-gradient(133deg, rgb(80, 44, 235) 20%, rgb(158, 31, 226) 60%);
+    margin-left: -150px;
+
 }
 
 
@@ -323,6 +344,41 @@ i.bi-patch-check{
 }
 
 
+.miniCircle1{
+    position: absolute;
+    width: 20px;
+    height: 60px;
+    margin-left: -170px;
+    margin-top: 150px;
+    z-index: 5;
+}
+
+.x1{
+    width: 20px;
+    height: 60px;
+    margin-left: 200px;
+    margin-top: -170px;
+    transform: rotate(-10deg);
+    z-index: 5;
+}
+
+.miniCircle2{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    margin-left: -170px;
+    margin-top: 150px;
+    z-index: 5;
+}
+
+.x2{
+    width: 20px;
+    height: 20px;
+    margin-left: 300px;
+    margin-top: -450px;
+    transform: rotate(-10deg);
+    z-index: 5;
+}
 
 
 
