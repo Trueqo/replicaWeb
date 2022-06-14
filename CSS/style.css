@@ -1,4 +1,4 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -6,48 +6,51 @@
     text-decoration: none;
 }
 
-nav{
+nav {
     background-color: white;
-    box-shadow:0.2rem 0.2rem 0.2rem rgba(0,0,0,0.1);
+    box-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.1);
     width: 100%;
     height: 5rem;
     display: flex;
     align-items: center;
     position: relative;
-    
+
 }
 
-label.titleNav{
+label.titleNav {
     color: black;
     font-size: 1.5rem;
-    margin-left: 8rem;
+    margin-left: 11rem;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 700;
 }
 
-nav ul{
-    
+nav ul {
+
     margin-right: 8rem;
     position: absolute;
     right: 1rem;
 
 }
 
-nav ul li{
+nav ul li {
     display: inline-block;
     margin-left: 1rem;
-    
+    font-family: 'Mulish', sans-serif;
 }
 
-.opt{
+.opt {
     color: black;
     font-size: 1.2rem;
 }
 
-a.active,a:hover{
-    color:rgb(42, 63, 230);
+a.active,
+a:hover {
+    color: rgb(42, 63, 230);
     transition: .5s;
 }
 
-.feedback{
+.feedback {
     background-color: rgb(42, 63, 230);
     border-radius: 1rem;
     padding: 0.5rem;
@@ -55,7 +58,7 @@ a.active,a:hover{
     color: white !important;
 }
 
-.checkbtn{
+.checkbtn {
     font-size: 2rem;
     color: black;
     position: absolute;
@@ -64,21 +67,21 @@ a.active,a:hover{
     display: none;
 }
 
-#check{
+#check {
     display: none;
 }
 
-.container1{
+.container1 {
     height: calc(100vh - 5rem);
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     grid-template-areas: "section aside";
-    
+
 }
 
-.section{
+.section {
     height: 100%;
     width: 100%;
     grid-area: section;
@@ -86,45 +89,100 @@ a.active,a:hover{
     flex-direction: column;
     align-items: flex-start;
     padding-top: 5rem;
-    
+
 }
 
-.aside{
+.aside {
     height: 100%;
     width: 100%;
     grid-area: aside;
-    background-color: orange;
+
 }
 
 
 
-.titleSesion1{
+
+
+.aside {
+    grid-area: aside;
+    height: auto;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 0;
+}
+
+.titleSesion1 {
     font-size: 5rem;
-    margin-left: 25%;
+    font-family: 'Newsreader', serif;
+    margin: 0 auto 0 25%;
 }
 
-.parrafoSesion1{
-    font-size: 1.2rem;
-    margin-left: 25%;
-    margin-top: 1rem;
+.parrafoSesion1 {
+    font-family: 'Mulish', sans-serif;
+    font-size: 1.5rem;
+    color: rgb(108, 117, 125);
+    padding-top: 1rem;
+    margin: 0 auto 0 25%;
 }
 
+.circle {
+    width: 20rem;
+    height: 20rem;
+    background: rgb(80, 44, 235);
+    background: -moz-linear-gradient(43deg, rgb(80, 44, 235) 20%, rgb(158, 31, 226) 60%);
+    background: -webkit-linear-gradient(43deg, rgb(80, 44, 235) 20%, rgb(158, 31, 226) 60%);
+    background: -o-linear-gradient(43deg, rgb(80, 44, 235) 20%, rgb(158, 31, 226) 60%);
+    background: -ms-linear-gradient(43deg, rgb(80, 44, 235) 20%, rgb(158, 31, 226) 60%);
+    background: linear-gradient(133deg, rgb(80, 44, 235) 20%, rgb(158, 31, 226) 60%);
+    border-radius: 100%;
+}
 
-@media (max-width: 640px){
-    
-    .checkbtn{
+.x1{
+    width: 1rem;
+    height: auto;
+    position: absolute;
+    left: 10rem;
+    bottom: 8rem;
+}
+.miniCircle1{
+    width: 1rem;
+    height: auto;
+    position: absolute;
+    right: 10rem;
+    top: 10rem;
+}
+
+.video{
+    height:23rem;
+    width: auto;
+    position:absolute;
+}
+.marco{
+    height:24rem;
+    width:auto;
+    position:absolute;
+}
+
+/* ####################### responsive moviles ############################## */
+
+@media (max-width: 640px) {
+
+    .checkbtn {
         font-size: 3rem;
         color: black;
         display: block;
         right: 2rem;
     }
 
-    label.titleNav{
+    label.titleNav {
         font-size: 2rem;
         margin-left: 2rem !important;
     }
 
-    ul{
+    ul {
         position: fixed;
         width: 100%;
         height: 100vh;
@@ -133,62 +191,142 @@ a.active,a:hover{
         left: -100%;
         text-align: center;
         transition: all .5s;
-      }
+        z-index: 10;
+    }
 
     nav ul li {
-        
+
         display: block;
         margin: 50px 0;
         line-height: 30px;
-        
-        
+
+
     }
-    nav ul li{
+
+    nav ul li {
         display: block;
         margin: 50px 0;
         line-height: 30px;
-      }
-      .opt{
+    }
+
+    .opt {
         font-size: 1.4rem;
-      }
-      .feedback{
+    }
+
+    .feedback {
         font-size: 1.2rem;
         margin: 0 auto 0 auto;
         width: 10rem;
-      }
+    }
 
-      a:hover,a.active{
+    a:hover,
+    a.active {
         background: none;
         color: #0082e6;
-      }
-      #check:checked ~ ul{
-        left: 0;
-      }
+    }
 
-      .container{
-        height: calc(100vh - 5rem);
+    #check:checked~ul {
+        left: 0;
+        z-index: 10;
+    }
+
+    .container1 {
+        height: 100vh;
         width: 100%;
         display: grid;
-        grid-template-columns: 1fr ;
-        grid-template-rows: 1fr 1fr;
-        grid-template-areas:"section"
-                            "aside";
+        grid-template-columns: auto;
+        grid-template-rows: 17rem auto;
+        grid-template-areas: "section"
+            "aside";
     }
-    
-    .section{
-        height: 100%;
-        width: 100%;
+
+    .section {
         grid-area: section;
-        background-color: red;
+        height: auto;
+        width: auto;
+        padding-top: 2rem;
+        display: flex;
+        flex-direction: column;
+
     }
-    
-    .aside{
-        height: 100%;
-        width: 100%;
+
+    .aside {
         grid-area: aside;
-        background-color: orange;
+        height: auto;
+        width: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        z-index: 0;
+    }
+
+    .titleSesion1 {
+        font-size: 3rem;
+        font-family: 'Newsreader', serif;
+        margin: 0 auto 0 auto;
+    }
+
+    .parrafoSesion1 {
+        font-family: 'Mulish', sans-serif;
+        font-size: .9rem;
+        color: rgb(108, 117, 125);
+        padding-top: 1rem;
+        margin: 0 auto 0 auto;
+    }
+
+    .circle {
+        width: 20rem;
+        height: 20rem;
+        background: rgb(80, 44, 235);
+        background: -moz-linear-gradient(43deg, rgb(80, 44, 235) 20%, rgb(158, 31, 226) 60%);
+        background: -webkit-linear-gradient(43deg, rgb(80, 44, 235) 20%, rgb(158, 31, 226) 60%);
+        background: -o-linear-gradient(43deg, rgb(80, 44, 235) 20%, rgb(158, 31, 226) 60%);
+        background: -ms-linear-gradient(43deg, rgb(80, 44, 235) 20%, rgb(158, 31, 226) 60%);
+        background: linear-gradient(133deg, rgb(80, 44, 235) 20%, rgb(158, 31, 226) 60%);
+        border-radius: 100%;
+    }
+
+    .x1{
+        width: 1rem;
+        height: auto;
+        position: absolute;
+        left: 2rem;
+        bottom: 4rem;
+    }
+    .miniCircle1{
+        width: 1rem;
+        height: auto;
+        position: absolute;
+        right: 2rem;
+        top: 4rem;
+    }
+
+    .video{
+        height:23rem;
+        width: auto;
+        position:absolute;
+    }
+    .marco{
+        height:24rem;
+        width:auto;
+        position:absolute;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* @media (max-width: 858px){
     .checkbtn{
