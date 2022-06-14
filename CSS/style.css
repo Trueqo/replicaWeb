@@ -178,7 +178,7 @@ a:hover {
     }
 
     label.titleNav {
-        font-size: 2rem;
+        font-size: 2em;
         margin-left: 2rem !important;
     }
 
@@ -276,8 +276,8 @@ a:hover {
     }
 
     .circle {
-        width: 20rem;
-        height: 20rem;
+        height: 17rem;
+        width: 17rem;
         background: rgb(80, 44, 235);
         background: -moz-linear-gradient(43deg, rgb(80, 44, 235) 20%, rgb(158, 31, 226) 60%);
         background: -webkit-linear-gradient(43deg, rgb(80, 44, 235) 20%, rgb(158, 31, 226) 60%);
@@ -303,12 +303,12 @@ a:hover {
     }
 
     .video{
-        height:23rem;
+        height:65%;
         width: auto;
         position:absolute;
     }
     .marco{
-        height:24rem;
+        height:69%;
         width:auto;
         position:absolute;
     }
